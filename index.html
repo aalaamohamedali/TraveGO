@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraveGO</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-black bg-opacity-70 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl font-bold" id="logo">
+                <i class="fas fa-plane-departure text-cyan-500 mr-2"></i> Trave<span
+                    class="text-cyan-400 font-bold">GO</span>
+            </h1>
+            <button class="md:hidden" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                <i data-feather="menu" class="w-6 h-6"></i>
+                <div id="mobileMenu" class="hidden md:hidden flex flex-col items-start gap-3 px-4 pt-3">
+                    <a href="#hero" class="hover:text-cyan-300 ">Home</a>
+                    <a href="#destinations" class="hover:text-cyan-300 ">Destinations</a>
+                    <a href="#about" class="hover:text-cyan-300">About</a>
+                    <a href="#booking" class="hover:text-cyan-300">Book</a>
+                    <a href="#contact" class="hover:text-cyan-300">Contact</a>
+                </div>
+            </button>
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#hero" class="hover:text-cyan-300 ">Home</a>
+                <a href="#destinations" class="hover:text-cyan-300 ">Destinations</a>
+                <a href="#about" class="hover:text-cyan-300">About</a>
+                <a href="#booking" class="hover:text-cyan-300">Book</a>
+                <a href="#contact" class="hover:text-cyan-300">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero"
+        class="h-screen flex items-center justify-center text-center px-4 pt-20 bg-[url('/imgs/maldives.jpg')] bg-cover bg-center">
+        <div class="bg-black bg-opacity-50 p-10 rounded-xl">
+            <h2 class="text-5xl font-bold mb-4">EXPLORE <br>DREAM <br><span class="text-cyan-300">DESTINATION</span>
+            </h2>
+            <p class="mb-6 max-w-xl mx-auto">Explore unfamiliar territories, embrace diverse cultures, and pursue dream
+                destinations that captivate your heart.</p>
+            <a href="#booking" class="bg-cyan-500 px-6 py-3 rounded text-white font-semibold hover:bg-cyan-400">BOOK
+                NOW</a>
+        </div>
+    </section>
+    <!-- Destinations Cards -->
+    <section id="destinations" class="py-20 bg-black px-6 bg-gradient-to-b from-black to-gray-900">
+        <div class="text-center mb-10">
+            <h3 class="text-3xl font-bold text-cyan-300">Top Destinations</h3>
+        </div>
+        <div class="container mx-auto text-center">
+            <div class="grid md:grid-cols-3 gap-8 px-4">
+                <!-- Cards -->
+                <div
+                    class="bg-gradient-to-b shadow rounded overflow-hidden transition-transform duration-300 hover:scale-110">
+                    <img src="imgs/OIP.webp" class="w-full h-56 object-cover">
+                    <div class="p-4 text-blue-300">
+                        <h4 class="text-xl font-semibold ">Bali, Indonesia</h4>
+                        <p>From $799 - 6 Days</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-b shadow rounded overflow-hidden transition-transform duration-300 hover:scale-110">
+                    <img src="imgs/OIP (1).webp" class="w-full h-56 object-cover">
+                    <div class="p-4 text-blue-300">
+                        <h4 class="text-xl font-semibold ">Dubai, UAE</h4>
+                        <p>From $899 - 5 Days</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-b shadow rounded overflow-hidden transition-transform duration-300 hover:scale-110">
+                    <img src="imgs/R.jpg" class="w-full h-56 object-cover">
+                    <div class="p-4 text-blue-300">
+                        <h4 class="text-xl font-semibold ">Maldives</h4>
+                        <p>From $1099 - 7 Days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="about"
+        class="h-screen flex items-center justify-center px-4 pt-20 bg-[url('/imgs/p.jpg')] bg-cover bg-center">
+        <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-10">
+
+            <div class="w-full md:w-1/2 text-left self-center" data-aos="fade-up">
+                <h3 class="text-6xl font-bold text-cyan-400 mb-6 transition-transform duration-300 hover:scale-110">
+                    Why Travel With Us
+                </h3>
+                <p class="max-w-md text-gray-600">
+                    We offer top-notch services to ensure your travel experience is smooth, exciting, and unforgettable.
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 text-gray-600 relative">
+                <div class="absolute left-0 top-0 w-1 h-full bg-cyan-500"></div>
+
+                <div class="space-y-10 mt-10 px-4">
+
+                    <div class="relative bg-white bg-opacity-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-gray-900">
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Affordable Packages</h4>
+                        <p>Enjoy high-quality services at unbeatable prices.</p>
+                    </div>
+
+
+                    <div class="relative bg-white bg-opacity-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-gray-900">
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">24/7 Support</h4>
+                        <p>Our team is available anytime, anywhere.</p>
+                    </div>
+
+
+                    <div class="relative bg-white bg-opacity-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="absolute -left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 bg-cyan-400 rounded-full border-4 border-gray-900">
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Custom Itineraries</h4>
+                        <p>Your journey, your way. Tailored trips made just for you.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Booking Form -->
+    <section id="booking" class="py-20 bg-black px-6 bg-gradient-to-b from-gray-900  to-black">
+        <div class="container mx-auto px-4 max-w-2xl ">
+            <h3 class="text-3xl font-bold text-center mb-10 text-cyan-400">Book Now</h3>
+            <form class="bg-gray-100 p-8 rounded shadow-md space-y-6 text-gray-900" method="post">
+                <div>
+                    <label class="block mb-1 font-medium">Full Name</label>
+                    <input type="text" placeholder="Your Name" class="w-full border p-3 rounded" required />
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Email</label>
+                    <input type="email" placeholder="your@email.com" class="w-full border p-3 rounded" required />
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Phone Number</label>
+                    <input type="tel" placeholder="+1234567890" class="w-full border p-3 rounded" required />
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Destination</label>
+                    <select class="w-full border p-3 rounded" required>
+                        <option>Bali</option>
+                        <option>Dubai</option>
+                        <option>Maldives</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Travel Date</label>
+                    <input type="date" class="w-full border p-3 rounded" required />
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Number of People</label>
+                    <input type="number" min="1" class="w-full border p-3 rounded" required />
+                </div>
+                <div>
+                    <label class="block mb-1 font-medium">Additional Notes</label>
+                    <textarea class="w-full border p-3 rounded" rows="3" placeholder="Any special requests?"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-slate-900 text-white py-3 rounded hover:bg-cyan-500 font-bold">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gradient-to-b from-black  to-gray-900 text-white py-10 px-6">
+        <hr class="container border-gray-100 opacity-20  mx-auto mb-10" />
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <a href="#hero">
+                    <h2 class="text-2xl font-bold">
+                        <i class="fas fa-plane-departure text-cyan-500 mr-2"></i> Trave<span
+                            class="text-cyan-400 font-bold">GO</span>
+                    </h2>
+                </a>
+                <p>Your gateway to dream destinations.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-2">Contact Us</h4>
+                <p>Email: aalaa.mohamed.alii@gmail.com</p>
+                <p>Phone: 01143234579</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-2">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-cyan-400">Instagram</a>
+                    <a href="#" class="hover:text-cyan-400">Facebook</a>
+                    <a href="https://www.linkedin.com/in/aalaa-mohamed-ali-47b0331a7/"
+                        class="hover:text-cyan-400">LinkedIn</a>
+                    <a href="https://wa.me/201066916557" target="_blank" class="hover:text-cyan-400">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-400 text-sm">&copy; 2025 TraveGO. All rights reserved.</div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
